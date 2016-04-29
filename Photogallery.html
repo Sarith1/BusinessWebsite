@@ -68,7 +68,9 @@
             attribute, which starts from the value 1 and goes up from there -->
             <div class="filtr-container">
                 <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1, 5" data-sort="Busy streets">
-                    <img class="img-responsive" src="img/city_1.jpg" alt="sample image">
+
+                    <div id="light" class="white_content">
+                    <img class="img-responsive" src="img/city_1.jpg" alt="sample image"></div><div id="fade" class="black_overlay"></div>
                     <span class="item-desc">Busy Streets</span>
                 </div>
                 <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2, 5" data-sort="Luminous night">
@@ -108,8 +110,8 @@
     </div>
 
     <!-- Include jQuery & Filterizr -->
-    <script src="jquery.min.js"></script>
-    <script src="filterizr/jquery.filterizr.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/filterizr/jquery.filterizr.js"></script>
     <script src="js/controls.js"></script>
 
     <!-- Kick off Filterizr -->
