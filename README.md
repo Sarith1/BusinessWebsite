@@ -1,2 +1,2 @@
 # BusinessWebsite
-Guy, Sarith &amp Maartje; 
+Guy, Sarith & Maartje; 
