@@ -9,6 +9,7 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/photogallery.css">
+    
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -24,7 +25,7 @@
             <!-- A basic setup of simple mode filter controls, all you have to do is use data-filter="all"
             for an unfiltered gallery and then the values of your categories to filter between them -->
             <ul class="simplefilter">
-                Simple filter controls:
+                Choose category:
                 <li class="active" data-filter="all">All</li>
                 <li data-filter="1">Furniture</li>
                 <li data-filter="2">Silver</li>
@@ -37,13 +38,13 @@
         <!-- Filter Controls - Multifilter Mode -->
         
 
-        <!-- Shuffle & Sort Controls -->
+        <!-- Shuffle & Sort Controls 
         <div class="row">
             <ul class="sortandshuffle">
                 Sort &amp; Shuffle controls:
-                <!-- Basic shuffle control -->
+                Basic shuffle control
                 <li class="shuffle-btn" data-shuffle>Shuffle</li>
-                <!-- Basic sort controls consisting of asc/desc button and a select -->
+                Basic sort controls consisting of asc/desc button and a select 
                 <li class="sort-btn active" data-sortAsc>Asc</li>
                 <li class="sort-btn" data-sortDesc>Desc</li>
                 <select data-sortOrder>
@@ -55,13 +56,13 @@
                     </option>
                 </select>
             </ul>
-        </div>
+        </div>-->
 
-        <!-- Search control -->
+        <!-- Search control 
         <div class="row search-row">
             Search control:
             <input type="text" class="filtr-search" name="filtr-search" data-search>
-        </div>
+        </div>-->
 
         <div class="row">
             <!-- This is the set up of a basic gallery, your items must have the categories they belong to in a data-category
@@ -180,6 +181,7 @@ bronze,
      </div>
     </section>
 
+
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -189,14 +191,24 @@ bronze,
                 </div>
             </div>
             <div class="container">
+
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
+                        
+                        
+                        <div id="slides">
+
+                          <img  src="./img/silver1.jpg" alt="">
+                          <img class="img-responsive img-centered" src="./img/silver1.jpg" alt="">
+                          <img class="img-responsive img-centered" src="./img/silver1.jpg" alt="">
+                          <img class="img-responsive img-centered" src="./img/silver1.jpg" alt="">
+                          <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left"></i></a>
+                          <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right"></i></a>
+                        </div>
                             <!-- Project Details Go Here -->
                             <h2>Silver Basket With Handle</h2>
                             <p class="item-intro text-muted">1807, Utrecht <br> Van Voorst</p>
-                            <img class="img-responsive img-centered" src="./img/silver1.jpg" alt="">
-                            <p>-</p>
                             
                            <!-- <ul class="list-inline">
                                 <li>April 2016</li>
@@ -449,6 +461,7 @@ h 24 cm, w 34 cm incl. base</p>
 
     <script src="js/controls.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.slides.min.js"></script>
 
     <!-- Kick off Filterizr -->
     <script type="text/javascript">
@@ -456,6 +469,15 @@ h 24 cm, w 34 cm incl. base</p>
             //Initialize filterizr with default options
             $('.filtr-container').filterizr();
         });
+
     </script>
+    <script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 940,
+        height: 528
+      });
+    });
+  </script>
   </body>
 </html>
