@@ -10,6 +10,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/photogallery.css">
     
+    
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -190,38 +191,32 @@ bronze,
                     </div>
                 </div>
             </div>
-            <div class="container">
 
+              <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                        
-                        
-                        <div id="slides">
-
-                          <img  src="./img/silver1.jpg" alt="">
-                          <img class="img-responsive img-centered" src="./img/silver1.jpg" alt="">
-                          <img class="img-responsive img-centered" src="./img/silver1.jpg" alt="">
-                          <img class="img-responsive img-centered" src="./img/silver1.jpg" alt="">
-                          <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left"></i></a>
-                          <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right"></i></a>
-                        </div>
                             <!-- Project Details Go Here -->
                             <h2>Silver Basket With Handle</h2>
                             <p class="item-intro text-muted">1807, Utrecht <br> Van Voorst</p>
+                            <img class="img-responsive img-centered" src="./img/silver1.jpg" alt="">
+
+                            <p>-</p>
                             
                            <!-- <ul class="list-inline">
                                 <li>April 2016</li>
+                            <div id="slides">
                                 <li>Client: Round Icons</li>
                                 <li>Category: Graphic Design</li>
                             </ul> -->
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
+                     </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+        
 
      <!-- Portfolio Modal 2 -->
     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
@@ -461,7 +456,7 @@ h 24 cm, w 34 cm incl. base</p>
 
     <script src="js/controls.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.slides.min.js"></script>
+    
 
     <!-- Kick off Filterizr -->
     <script type="text/javascript">
@@ -471,13 +466,6 @@ h 24 cm, w 34 cm incl. base</p>
         });
 
     </script>
-    <script>
-    $(function() {
-      $('#slides').slidesjs({
-        width: 940,
-        height: 528
-      });
-    });
-  </script>
+  
   </body>
 </html>
