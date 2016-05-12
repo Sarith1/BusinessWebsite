@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/nycda-geeks/BusinessWebsite/issues"
   },
-  "homepage": "https://github.com/nycda-geeks/BusinessWebsite#readme"
+  "homepage": "https://github.com/nycda-geeks/BusinessWebsite#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
 }
