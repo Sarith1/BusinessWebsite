@@ -4,8 +4,6 @@ var fs = require ("fs")
 
 
 
-app.use(express.static('.', {
-    index: '../index.html'
-}));
+app.use(express.static('.'));
 
 app.listen(3000)
